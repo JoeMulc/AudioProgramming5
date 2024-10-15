@@ -10,6 +10,7 @@
 #include "sokol_audio.h"
 
 #include <iostream>
+#include <vector>
 #include <string>
 
 //------------------------------------------------------------------------------
@@ -24,6 +25,11 @@ struct AudioData
 	//TODO: Store any persistent variables you want access to in the audio
 	//		thread here.
 	//--------------------------------------------------------------------------
+
+	std::vector<float> data;
+	int playedFrames = 0;
+	int numFrames = 0;
+	int numChannels= 0;
 };
 
 //------------------------------------------------------------------------------
@@ -56,7 +62,17 @@ void audioCallback(float *buffer,	//A buffer of float audio samples for us to fi
 			//------------------------------------------------------------------
 			//TODO: Write audio data into buffer here.
 			//------------------------------------------------------------------
+			if (data->playedFrames + i == data->numFrames)
+			{
+				data->playedFrames = -2048;
+				break;
+			}
+
+			buffer[i] = data->data[i + data->playedFrames];
+			
 		}
+		data->playedFrames += numFrames;	
+
 	}
 }
 
@@ -69,6 +85,40 @@ int main(int argc, char **argv)
 	//--------------------------------------------------------------------------
 	//TODO: For the first task, you will want to load Loop.wav here.
 	//		(refer back to last week's lab for how to do this)
+
+	//These variables will be set by the dr_wav wave file library in the
+	//following function call.
+	unsigned int channels;
+	unsigned int samplerate;
+	drwav_uint64 numFrames;
+
+	//Load our sound file.
+	float* data = drwav_open_file_and_read_pcm_frames_f32("Loop.wav",	//Sound file to load.
+		&channels,	//On return, the number of channels in the file.
+		&samplerate,	//On return, the file's samplerate.
+		&numFrames,	//On return, the number of frames (num samples *  numchannels) in the file.
+		NULL);
+
+	if (data == nullptr)
+	{
+		std::cout << "Could not open sound file." << std::endl;
+
+		return 1;
+	}
+
+	//Note: dr_wav is a C library, and returns our audio data as a raw float
+	//		pointer. To make things easier for ourselves, we'll copy the data
+	//		into a C++ vector (vectors are easier to resize if we want to
+	//		change the length of the sound).
+
+	std::vector<float> dataVector(data, data + (numFrames * channels));
+	audioData.data = dataVector;
+	audioData.numChannels = channels;
+	audioData.numFrames = numFrames;
+
+	//With that done, we can now free the dr_wav-allocated audio data.
+	drwav_free(data, NULL);
+
 	//--------------------------------------------------------------------------
 
 	//Create a sokol_audio audio descriptor, zero its members.
