@@ -62,16 +62,14 @@ void audioCallback(float *buffer,	//A buffer of float audio samples for us to fi
 			//------------------------------------------------------------------
 			//TODO: Write audio data into buffer here.
 			//------------------------------------------------------------------
-			if (data->playedFrames + i == data->numFrames)
+			if (data->playedFrames == data->numFrames)
 			{
-				data->playedFrames = -2048;
-				break;
+				data->playedFrames = 0;
 			}
 
-			buffer[i] = data->data[i + data->playedFrames];
-			
-		}
-		data->playedFrames += numFrames;	
+			buffer[i] = data->data[data->playedFrames];
+			data->playedFrames++;	
+		}	
 
 	}
 }
