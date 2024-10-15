@@ -70,7 +70,6 @@ void audioCallback(float *buffer,	//A buffer of float audio samples for us to fi
 			buffer[i] = data->data[data->playedFrames];
 			data->playedFrames++;	
 		}	
-
 	}
 }
 
@@ -148,6 +147,12 @@ int main(int argc, char **argv)
 	//(note that audio processing happens in a separate audio thread)
 	std::cin.get();
 
+	for (int i = 0; i < audioData.data.size(); i++)
+	{
+		audioData.data[i] += audioData.data[i];
+	}
+
+	std::cin.get();
 	//Close the soundcard, clean up after ourselves.
 	saudio_shutdown();
 
