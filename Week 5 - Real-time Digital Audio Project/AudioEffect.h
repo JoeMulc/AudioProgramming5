@@ -1,12 +1,21 @@
 //	AudioEffect.h - Base class for any audio effects you code in lab 6.
 
 #pragma once
-
+#include <iostream>
+#include <vector>
+#include <string>
 ///	Base class for any audio effects you code in lab 6.
 /*!
 	It's up to you to inherit from this class to create your own audio effects,
 	and to determine how to hook it up to your existing audio code.
  */
+
+enum effects {
+	Gain,
+	Clamp
+};
+
+
 class AudioEffect
 {
 public:
@@ -25,13 +34,32 @@ public:
 							*interleaved* in buffer.
 	 */
 
-	std::vector<float> data;
-	int playedFrames = 0;
-	int numFrames = 0;
-	int numChannels = 0;
+	void doEffect(float* buffer, int numFrames, int numChannels, effects e)
+	{
+		switch (e)
+		{
+			case (effects::Gain):
+				gain(buffer, numFrames, numChannels);
+				break;
+			case (effects::Clamp):
+				clamp(buffer, numFrames, numChannels);
+				break;
+		}
+	}
 
+	void gain(float* buffer, int numFrames, int numChannels)
+	{
+		for (int i = 0; i < numFrames * numChannels; i++) {
+			buffer[i] *= 2.0;  
+		}
+	}
 
-	virtual void process(float *buffer, int numFrames, int numChannels) = 0;
+	void clamp(float* buffer, int numFrames, int numChannels)
+	{
+		for (int i = 0; i < numFrames * numChannels; i++) {
+			buffer[i] = tanh(buffer[i]);
+		}
+	}
 
 	///	Inherit this function if your effect needs to know the samplerate.
 	/*!

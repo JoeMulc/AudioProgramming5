@@ -32,6 +32,7 @@ struct AudioData
 	int playedFrames = 0;
 	int numFrames = 0;
 	int numChannels= 0;
+	AudioEffect* audioEffect;
 };
 
 //------------------------------------------------------------------------------
@@ -52,6 +53,7 @@ void audioCallback(float *buffer,	//A buffer of float audio samples for us to fi
 	//Just in case...
 	if(data)
 	{
+		
 		for(int i=0;i<numFrames;++i)
 		{
 			//Note: This boilerplate assumes we're working with mono audio.
@@ -68,10 +70,11 @@ void audioCallback(float *buffer,	//A buffer of float audio samples for us to fi
 			{
 				data->playedFrames = 0;
 			}
-
 			buffer[i] = data->data[data->playedFrames];
 			data->playedFrames++;	
-		}	
+		}
+		data->audioEffect->doEffect(buffer, numFrames, numChannels, effects::Gain);
+		data->audioEffect->doEffect(buffer, numFrames, numChannels, effects::Clamp);
 	}
 }
 
