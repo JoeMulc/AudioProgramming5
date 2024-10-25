@@ -24,6 +24,13 @@ public:
 							you can assume multi-channel audio data will be
 							*interleaved* in buffer.
 	 */
+
+	std::vector<float> data;
+	int playedFrames = 0;
+	int numFrames = 0;
+	int numChannels = 0;
+
+
 	virtual void process(float *buffer, int numFrames, int numChannels) = 0;
 
 	///	Inherit this function if your effect needs to know the samplerate.

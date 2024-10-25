@@ -9,6 +9,8 @@
 #define SOKOL_IMPL
 #include "sokol_audio.h"
 
+#include "AudioEffect.h"
+
 #include <iostream>
 #include <vector>
 #include <string>

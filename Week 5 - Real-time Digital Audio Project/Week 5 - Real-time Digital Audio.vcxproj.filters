@@ -29,5 +29,8 @@
     <ClInclude Include="LockFreeQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AudioEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
