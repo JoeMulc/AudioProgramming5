@@ -138,11 +138,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClampEffect.cpp" />
+    <ClCompile Include="GainEffect.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioEffect.h" />
+    <ClInclude Include="ClampEffect.h" />
     <ClInclude Include="dr_wav.h" />
+    <ClInclude Include="GainEffect.h" />
     <ClInclude Include="LockFreeQueue.h" />
     <ClInclude Include="sokol_audio.h" />
   </ItemGroup>

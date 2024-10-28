@@ -34,32 +34,36 @@ public:
 							*interleaved* in buffer.
 	 */
 
-	void doEffect(float* buffer, int numFrames, int numChannels, effects e)
-	{
-		switch (e)
-		{
-			case (effects::Gain):
-				gain(buffer, numFrames, numChannels);
-				break;
-			case (effects::Clamp):
-				clamp(buffer, numFrames, numChannels);
-				break;
-		}
-	}
+	virtual void Process(float* buffer, int numFrames, int numChannels) = 0;
 
-	void gain(float* buffer, int numFrames, int numChannels)
-	{
-		for (int i = 0; i < numFrames * numChannels; i++) {
-			buffer[i] *= 2.0;  
-		}
-	}
 
-	void clamp(float* buffer, int numFrames, int numChannels)
-	{
-		for (int i = 0; i < numFrames * numChannels; i++) {
-			buffer[i] = tanh(buffer[i]);
-		}
-	}
+	//OLD CODE FROM WORSE IMPLEMENTATION DEMONSTRATING ZERO PLOYMORPHISM
+	//void doEffect(float* buffer, int numFrames, int numChannels, effects e)
+	//{
+	//	switch (e)
+	//	{
+	//		case (effects::Gain):
+	//			gain(buffer, numFrames, numChannels);
+	//			break;
+	//		case (effects::Clamp):
+	//			clamp(buffer, numFrames, numChannels);
+	//			break;
+	//	}
+	//}
+	//
+	//void gain(float* buffer, int numFrames, int numChannels)
+	//{
+	//	for (int i = 0; i < numFrames * numChannels; i++) {
+	//		buffer[i] *= 2.0;  
+	//	}
+	//}
+	//
+	//void clamp(float* buffer, int numFrames, int numChannels)
+	//{
+	//	for (int i = 0; i < numFrames * numChannels; i++) {
+	//		buffer[i] = tanh(buffer[i]);
+	//	}
+	//}
 
 	///	Inherit this function if your effect needs to know the samplerate.
 	/*!

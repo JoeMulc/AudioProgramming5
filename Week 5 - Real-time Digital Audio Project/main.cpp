@@ -10,6 +10,8 @@
 #include "sokol_audio.h"
 
 #include "AudioEffect.h"
+#include "ClampEffect.h"
+#include "GainEffect.h"
 
 #include <iostream>
 #include <vector>
@@ -32,7 +34,8 @@ struct AudioData
 	int playedFrames = 0;
 	int numFrames = 0;
 	int numChannels= 0;
-	AudioEffect* audioEffect;
+	AudioEffect* gainEffect = new GainEffect();
+	AudioEffect* clampEffect = new ClampEffect();
 };
 
 //------------------------------------------------------------------------------
@@ -73,8 +76,12 @@ void audioCallback(float *buffer,	//A buffer of float audio samples for us to fi
 			buffer[i] = data->data[data->playedFrames];
 			data->playedFrames++;	
 		}
-		data->audioEffect->doEffect(buffer, numFrames, numChannels, effects::Gain);
-		data->audioEffect->doEffect(buffer, numFrames, numChannels, effects::Clamp);
+		if (data)
+		{
+			data->gainEffect->Process(buffer, numFrames, numChannels);
+			data->clampEffect->Process(buffer, numFrames, numChannels);
+		}
+		
 	}
 }
 
