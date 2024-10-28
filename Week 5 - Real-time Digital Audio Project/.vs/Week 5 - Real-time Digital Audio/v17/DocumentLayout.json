@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:GainEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\FilterEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:FilterEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\AudioEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:AudioEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\FilterEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:FilterEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:GainEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\AudioEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:AudioEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|solutionrelative:GainEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{011CDA01-3068-4DDA-9E4E-DB1F964C432C}|Week 5 - Real-time Digital Audio.vcxproj|D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\ClampEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,13 +46,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AudioEffect.h",
               "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\AudioEffect.h",
               "RelativeDocumentMoniker": "AudioEffect.h",
               "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\AudioEffect.h",
               "RelativeToolTip": "AudioEffect.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-25T12:34:10.573Z",
               "EditorCaption": ""
@@ -52,19 +60,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "GainEffect.h",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.h",
+              "RelativeDocumentMoniker": "GainEffect.h",
+              "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.h",
+              "RelativeToolTip": "GainEffect.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-28T13:13:32.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GainEffect.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.cpp",
+              "RelativeDocumentMoniker": "GainEffect.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.cpp",
+              "RelativeToolTip": "GainEffect.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-28T13:13:54.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FilterEffect.h",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\FilterEffect.h",
+              "RelativeDocumentMoniker": "FilterEffect.h",
+              "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\FilterEffect.h",
+              "RelativeToolTip": "FilterEffect.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-28T13:47:20.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilterEffect.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\FilterEffect.cpp",
+              "RelativeDocumentMoniker": "FilterEffect.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\FilterEffect.cpp",
+              "RelativeToolTip": "FilterEffect.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-28T13:47:29.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ClampEffect.h",
               "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\ClampEffect.h",
               "RelativeDocumentMoniker": "ClampEffect.h",
               "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\ClampEffect.h",
               "RelativeToolTip": "ClampEffect.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-28T13:09:34.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ClampEffect.cpp",
               "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\ClampEffect.cpp",
               "RelativeDocumentMoniker": "ClampEffect.cpp",
@@ -73,32 +133,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-28T13:11:19.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GainEffect.h",
-              "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.h",
-              "RelativeDocumentMoniker": "GainEffect.h",
-              "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.h",
-              "RelativeToolTip": "GainEffect.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-28T13:13:32.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GainEffect.cpp",
-              "DocumentMoniker": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.cpp",
-              "RelativeDocumentMoniker": "GainEffect.cpp",
-              "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\GainEffect.cpp",
-              "RelativeToolTip": "GainEffect.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-28T13:13:54.627Z",
               "EditorCaption": ""
             }
           ]
@@ -115,7 +149,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\LocalWorkDir\\2100609\\CMP_407\\CMP407_Week_5\\Week 5 - Real-time Digital Audio Project\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAUwFEAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIUAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-15T09:16:42.389Z",
               "EditorCaption": ""

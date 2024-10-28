@@ -15,6 +15,13 @@ enum effects {
 	Clamp
 };
 
+enum Filters
+{
+	LowPass,
+	HighPass,
+	BandPass,
+	SteepLowPass
+};
 
 class AudioEffect
 {
@@ -72,4 +79,18 @@ public:
 		this information.
 	 */
 	virtual void setSamplerate(float val) {}
+
+	void SetCoeff(float newCoeff)
+	{
+		coeff = newCoeff;
+	}
+
+	void SetFilter(Filters newFilter) 
+	{
+		filter = newFilter;
+	}
+
+protected:
+	float coeff = 0.5f;
+	Filters filter = Filters::LowPass;
 };

@@ -3,6 +3,6 @@
 class ClampEffect : public AudioEffect
 {
 public:
-	void Process(float* buffer, int numFrames, int numChannels) override;
+	void Process(float* buffer, int numFrames, int numChannels);
 };
 
