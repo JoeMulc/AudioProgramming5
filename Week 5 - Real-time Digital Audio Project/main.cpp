@@ -13,6 +13,7 @@
 #include "ClampEffect.h"
 #include "GainEffect.h"
 #include "FilterEffect.h"
+#include "DelayEffect.h"
 
 #include <iostream>
 #include <vector>
@@ -38,6 +39,7 @@ struct AudioData
 	AudioEffect* gainEffect = new GainEffect();
 	AudioEffect* clampEffect = new ClampEffect();
 	AudioEffect* filterEffect = new FilterEffect();
+	AudioEffect* delayEffect = new DelayEffect();
 };
 
 //------------------------------------------------------------------------------
@@ -82,7 +84,8 @@ void audioCallback(float *buffer,	//A buffer of float audio samples for us to fi
 		{
 			//data->gainEffect->Process(buffer, numFrames, numChannels);
 			//data->clampEffect->Process(buffer, numFrames, numChannels);
-			data->filterEffect->Process(buffer, numFrames, numChannels);
+			//data->filterEffect->Process(buffer, numFrames, numChannels);
+			data->delayEffect->Process(buffer, numFrames, numChannels);
 		}
 		
 	}
@@ -130,6 +133,9 @@ int main(int argc, char **argv)
 	
 	//SetFilter
 	//audioData.filterEffect->SetFilter(Filters::LowPass);
+
+	//Delay
+	audioData.delayEffect->setSamplerate(samplerate);
 
 	//With that done, we can now free the dr_wav-allocated audio data.
 	drwav_free(data, NULL);

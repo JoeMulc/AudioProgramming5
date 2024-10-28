@@ -1,3 +1,8 @@
-﻿  main.cpp
-D:\LocalWorkDir\2100609\CMP_407\CMP407_Week_5\Week 5 - Real-time Digital Audio Project\main.cpp(129,24): warning C4244: '=': conversion from 'drwav_uint64' to 'int', possible loss of data
+﻿  DelayEffect.cpp
+D:\LocalWorkDir\2100609\CMP_407\CMP407_Week_5\Week 5 - Real-time Digital Audio Project\DelayEffect.cpp(14,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\LocalWorkDir\2100609\CMP_407\CMP407_Week_5\Week 5 - Real-time Digital Audio Project\DelayEffect.cpp(29,47): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+  main.cpp
+D:\LocalWorkDir\2100609\CMP_407\CMP407_Week_5\Week 5 - Real-time Digital Audio Project\main.cpp(132,24): warning C4244: '=': conversion from 'drwav_uint64' to 'int', possible loss of data
+D:\LocalWorkDir\2100609\CMP_407\CMP407_Week_5\Week 5 - Real-time Digital Audio Project\main.cpp(138,39): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  Generating Code...
   Week 5 - Real-time Digital Audio.vcxproj -> D:\LocalWorkDir\2100609\CMP_407\CMP407_Week_5\Week 5 - Real-time Digital Audio Project\x64\Debug\Week 5 - Real-time Digital Audio.exe

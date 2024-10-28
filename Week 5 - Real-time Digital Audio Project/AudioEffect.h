@@ -78,7 +78,8 @@ public:
 		temporal calculations (e.g. delay, filters, reverbs, etc.) will need
 		this information.
 	 */
-	virtual void setSamplerate(float val) {}
+	virtual void setSamplerate(float val) {
+	}
 
 	void SetCoeff(float newCoeff)
 	{
@@ -93,4 +94,8 @@ public:
 protected:
 	float coeff = 0.5f;
 	Filters filter = Filters::LowPass;
+
+	//delay stuff
+	float maxDelayTime = 0.5;
+
 };

@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ClampEffect.cpp" />
+    <ClCompile Include="DelayEffect.cpp" />
     <ClCompile Include="FilterEffect.cpp" />
     <ClCompile Include="GainEffect.cpp" />
     <ClCompile Include="main.cpp" />
@@ -146,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="AudioEffect.h" />
     <ClInclude Include="ClampEffect.h" />
+    <ClInclude Include="DelayEffect.h" />
     <ClInclude Include="dr_wav.h" />
     <ClInclude Include="FilterEffect.h" />
     <ClInclude Include="GainEffect.h" />
